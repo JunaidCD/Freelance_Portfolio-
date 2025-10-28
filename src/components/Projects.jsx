@@ -14,7 +14,7 @@ const Projects = () => {
       glowColor: 'shadow-purple-500/50',
       icon: Shield,
       demoUrl: 'https://youtu.be/vwNu7Up3RdQ',
-      codeUrl: 'https://github.com/XXXXXXXXXXXXXX/Credence'
+      codeUrl: 'https://github.com/JunaidCD/Credence'
     },
     {
       title: 'FinBridge – Decentralized Peer-to-Peer Lending Platform',
@@ -24,7 +24,7 @@ const Projects = () => {
       glowColor: 'shadow-green-500/50',
       icon: Zap,
       demoUrl: 'https://youtu.be/VwHelavo0Ws',
-      codeUrl: 'https://github.com/XXXXXXXXXXXXXX/FinBridge'
+      codeUrl: 'https://github.com/JunaidCD/FinBridge'
     },
     {
       title: 'Dappazon – Decentralized E-Commerce Platform',
@@ -34,7 +34,7 @@ const Projects = () => {
       glowColor: 'shadow-blue-500/50',
       icon: Globe,
       demoUrl: 'https://youtu.be/Lkze7fc2L20',
-      codeUrl: 'https://github.com/XXXXXXXXXXXXXX/D-App'
+      codeUrl: 'https://github.com/JunaidCD/D-App'
     },
     {
       title: 'AyurHerb – Blockchain-Powered Ayurvedic Supply Chain Management',
@@ -44,7 +44,7 @@ const Projects = () => {
       glowColor: 'shadow-amber-500/50',
       icon: Leaf,
       demoUrl: 'http://ayurherb.netlify.app',
-      codeUrl: 'https://github.com/XXXXXXXXXXXXXX/AyurherbX'
+      codeUrl: 'https://github.com/JunaidCD/AyurherbX'
     }
   ]
 
@@ -57,7 +57,7 @@ const Projects = () => {
       glowColor: 'shadow-emerald-500/50',
       icon: Leaf,
       demoUrl: 'https://youtu.be/36btDaE4zek',
-      codeUrl: 'https://github.com/XXXXXXXXXXXXXX/Ayurherb-2.0'
+      codeUrl: 'https://github.com/JunaidCD/Ayurherb-2.0'
     },
     {
       title: 'AQUILA – AI Marine Research Platform',
@@ -77,7 +77,7 @@ const Projects = () => {
       glowColor: 'shadow-amber-500/50',
       icon: Eye,
       demoUrl: '#',
-      codeUrl: 'https://github.com/XXXXXXXXXXXXXX/CivicEye3.0'
+      codeUrl: 'https://github.com/JunaidCD/CivicEye3.0'
     },
     {
       title: 'ProofChain – Decentralized Credential Verification',
@@ -87,7 +87,7 @@ const Projects = () => {
       glowColor: 'shadow-violet-500/50',
       icon: Award,
       demoUrl: '#',
-      codeUrl: 'https://github.com/XXXXXXXXXXXXXX/Chainsure'
+      codeUrl: 'https://github.com/JunaidCD/Chainsure'
     },
     {
       title: 'SpaceDAO – Decentralized Space Mission Governance',
@@ -97,7 +97,7 @@ const Projects = () => {
       glowColor: 'shadow-slate-600/50',
       icon: Rocket,
       demoUrl: '#',
-      codeUrl: 'https://github.com/XXXXXXXXXXXXXX/SpaceDao2.0'
+      codeUrl: 'https://github.com/JunaidCD/SpaceDao2.0'
     },
     {
       title: 'Event Management Platform',
@@ -107,7 +107,7 @@ const Projects = () => {
       glowColor: 'shadow-pink-500/50',
       icon: Calendar,
       demoUrl: '#',
-      codeUrl: 'https://github.com/XXXXXXXXXXXXXX/React.js'
+      codeUrl: 'https://github.com/JunaidCD/React.js'
     }
   ]
 

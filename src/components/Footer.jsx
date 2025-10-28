@@ -8,7 +8,7 @@ const Footer = () => {
     { icon: Github, href: 'https://github.com', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:XXXXXXXXXXXXXX@example.com', label: 'Email' }
+    { icon: Mail, href: 'mailto:junaid@example.com', label: 'Email' }
   ]
 
   const quickLinks = [
@@ -41,7 +41,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <div className="mb-6">
-              <h3 className="text-3xl font-bold gradient-text mb-4">XXXXXXXXXXXXXX</h3>
+              <h3 className="text-3xl font-bold gradient-text mb-4">Junaid</h3>
               <p className="text-slate-400 leading-relaxed max-w-md">
                 Full Stack Developer passionate about creating innovative solutions 
                 and exceptional digital experiences. Always learning, always building.
@@ -88,8 +88,8 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="text-slate-400">
                 <span className="block text-sm">Email</span>
-                <a href="mailto:XXXXXXXXXXXXXX@example.com" className="hover:text-white transition-colors">
-                  XXXXXXXXXXXXXX@example.com
+                <a href="mailto:junaid@example.com" className="hover:text-white transition-colors">
+                  junaid@example.com
                 </a>
               </p>
               <p className="text-slate-400">
@@ -111,7 +111,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="flex items-center space-x-2 text-slate-400">
-              <span>© {currentYear} XXXXXXXXXXXXXX. Made with</span>
+              <span>© {currentYear} Junaid. Made with</span>
               <Heart className="w-4 h-4 text-red-500 animate-pulse" />
               <span>and lots of coffee.</span>
             </div>

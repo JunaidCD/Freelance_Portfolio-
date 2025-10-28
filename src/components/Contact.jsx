@@ -77,7 +77,7 @@ const Contact = () => {
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_email: 'XXXXXXXXXXXXXX@gmail.com' // Your email where you want to receive messages
+        to_email: 'junaidmollah17@gmail.com' // Your email where you want to receive messages
       }
       
       await emailjs.send(serviceId, templateId, templateParams, publicKey)
@@ -89,7 +89,7 @@ const Contact = () => {
     } catch (error) {
       console.error('EmailJS Error:', error)
       setSubmitStatus('error')
-      alert('Failed to send message. Please try again or contact me directly at XXXXXXXXXXXXXX@gmail.com')
+      alert('Failed to send message. Please try again or contact me directly at junaidmollah17@gmail.com')
     } finally {
       setIsSubmitting(false)
     }
@@ -99,7 +99,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'XXXXXXXXXXXXXX@gmail.com',
+      value: 'junaidmollah17@gmail.com',
       link: '#',
       color: 'from-red-500 to-pink-600',
       glowColor: 'shadow-red-500/50'
@@ -118,7 +118,7 @@ const Contact = () => {
     {
       icon: Github,
       name: 'GitHub',
-      url: 'https://github.com/XXXXXXXXXXXXXX',
+      url: 'https://github.com/JunaidCD',
       color: 'from-gray-600 to-slate-700',
       glowColor: 'shadow-gray-600/50',
       hoverColor: 'hover:shadow-gray-500/50'
@@ -126,7 +126,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/XXXXXXXXXXXXXX',
+      url: 'https://linkedin.com/in/junaid-mollah-a59150319',
       color: 'from-blue-500 to-blue-600',
       glowColor: 'shadow-blue-500/50',
       hoverColor: 'hover:shadow-blue-500/50'
@@ -134,7 +134,7 @@ const Contact = () => {
     {
       icon: X,
       name: 'X',
-      url: 'https://x.com/XXXXXXXXXXXXXX',
+      url: 'https://x.com/JunaidMollah5',
       color: 'from-slate-800 to-black',
       glowColor: 'shadow-slate-700/50',
       hoverColor: 'hover:shadow-white/30'

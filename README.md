@@ -1,4 +1,4 @@
-# 🚀 Modern Portfolio - XXXXXXXXXXXXXX
+# 🚀 Modern Portfolio - Junaid Mollah
 
 A stunning, modern portfolio website built with React, Vite, and TailwindCSS featuring glassmorphism effects, smooth animations, and an advanced UI design.
 
@@ -254,9 +254,9 @@ Feel free to fork this project and customize it for your own portfolio. If you m
 ## 📞 **Support**
 
 If you have any questions or need help customizing the portfolio, feel free to reach out:
-- Email: XXXXXXXXXXXXXX@gmail.com
+- Email: junaidmollah17@gmail.com
 -
 
 ---
 
-**Made with ❤️ and lots of coffee by XXXXXXXXXXXXXX**
+**Made with ❤️ and lots of coffee by Junaid Mollah**

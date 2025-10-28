@@ -59,7 +59,7 @@ const Hero = ({ setCurrentPage }) => {
             <div className="relative w-full h-full bg-slate-800 rounded-full border-4 border-white/30 overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-500">
               <img 
                 src="/profile.jpg" 
-                alt="XXXXXXXXXXXXXX" 
+                alt="Junaid Mollah" 
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                 onError={(e) => {
                   e.target.style.display = 'none';
@@ -79,12 +79,12 @@ const Hero = ({ setCurrentPage }) => {
             <div className="relative">
               <h1 className="text-6xl md:text-8xl font-black animate-slide-up relative z-10">
                 <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 bg-clip-text text-transparent animate-gradient bg-300% drop-shadow-2xl">
-                  XXXXXXXXXXXXXX
+                  Junaid Mollah
                 </span>
               </h1>
               {/* Text Shadow Effect */}
               <div className="absolute inset-0 text-6xl md:text-8xl font-black text-primary-500/20 blur-sm animate-pulse">
-                XXXXXXXXXXXXXX
+                Junaid Mollah
               </div>
             </div>
             
@@ -104,7 +104,7 @@ const Hero = ({ setCurrentPage }) => {
             {/* Enhanced Description */}
             <div className="relative glass p-8 rounded-3xl border border-white/10 backdrop-blur-xl animate-slide-up max-w-5xl mx-auto" style={{animationDelay: '0.5s'}}>
               <p className="text-xl md:text-2xl text-slate-300 leading-relaxed">
-                Hi, I'm <span className="gradient-text font-bold">XXXXXXXXXXXXXX</span>, a <span className="text-emerald-400 font-semibold">Blockchain Developer</span> currently pursuing B.Tech in Computer Science Engineering. I have hands-on experience in building <span className="text-cyan-400 font-semibold">decentralized applications (dApps)</span>, designing <span className="text-emerald-400 font-semibold">Ethereum smart contracts using Solidity</span>, and implementing DAO systems. Alongside blockchain, I am skilled in <span className="text-blue-400 font-semibold">full-stack web development with React.js, Node.js, and Express.js</span>. I have actively participated in multiple hackathons and worked on impactful projects that showcase my ability to develop innovative and secure blockchain-based solutions.
+                Hi, I'm <span className="gradient-text font-bold">Junaid Mollah</span>, a <span className="text-emerald-400 font-semibold">Blockchain Developer</span> currently pursuing B.Tech in Computer Science Engineering. I have hands-on experience in building <span className="text-cyan-400 font-semibold">decentralized applications (dApps)</span>, designing <span className="text-emerald-400 font-semibold">Ethereum smart contracts using Solidity</span>, and implementing DAO systems. Alongside blockchain, I am skilled in <span className="text-blue-400 font-semibold">full-stack web development with React.js, Node.js, and Express.js</span>. I have actively participated in multiple hackathons and worked on impactful projects that showcase my ability to develop innovative and secure blockchain-based solutions.
               </p>
             </div>
           </div>
@@ -147,8 +147,8 @@ const Hero = ({ setCurrentPage }) => {
           {/* Enhanced Social Links */}
           <div className="flex justify-center space-x-8 animate-slide-up mt-4 mb-32" style={{animationDelay: '0.9s'}}>
             {[
-              { icon: Github, href: 'https://github.com/XXXXXXXXXXXXXX', label: 'GitHub', color: 'hover:bg-gray-600', isExternal: true },
-              { icon: Linkedin, href: 'https://linkedin.com/in/XXXXXXXXXXXXXX', label: 'LinkedIn', color: 'hover:bg-blue-600', isExternal: true },
+              { icon: Github, href: 'https://github.com/JunaidCD', label: 'GitHub', color: 'hover:bg-gray-600', isExternal: true },
+              { icon: Linkedin, href: 'https://linkedin.com/in/junaid-mollah-a59150319', label: 'LinkedIn', color: 'hover:bg-blue-600', isExternal: true },
               { icon: Mail, href: '#contact', label: 'Email', color: 'hover:bg-red-600', isExternal: false, page: 'contact' }
             ].map((social, index) => (
               social.isExternal ? (

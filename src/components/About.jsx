@@ -42,7 +42,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="glass p-8 rounded-2xl border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-4">
-                Hello! I'm XXXXXXXXXXXXXX
+                Hello! I'm Junaid
               </h3>
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
