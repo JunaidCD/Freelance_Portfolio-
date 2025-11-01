@@ -8,8 +8,9 @@ const Projects = () => {
   const mainProjects = [
     {
       title: 'Credence – Decentralized Identity & Credential Verification System',
-      description: 'Developed a full-stack DApp for issuing, managing, and verifying digital credentials using Ethereum smart contracts. Implemented role-based access control (Users, Issuers, Verifiers) with real-time notifications. Deployed contracts locally with Hardhat and integrated frontend/backend through REST APIs.',
-      techStack: ['React.js', 'Express.js', 'Solidity', 'Ethers.js', 'Web3.js', 'Hardhat', 'MetaMask'],
+      description: 'Developed a secure decentralized identity system enabling organizations to issue and verify digital credentials on-chain. Integrated Ethereum smart contracts with role-based access (users, issuers, verifiers) and real-time verification. Helped clients ensure data authenticity, reduce fraud, and automate credential workflows.',
+      serviceCategory: 'Smart Contract Development | DApp Development',
+      techStack: ['React.js', 'Solidity', 'Ethers.js', 'Hardhat', 'MetaMask'],
       color: 'from-purple-500 to-indigo-600',
       glowColor: 'shadow-purple-500/50',
       icon: Shield,
@@ -158,25 +159,32 @@ const Projects = () => {
           <div className="relative inline-block">
             <h2 className="text-6xl md:text-8xl font-black animate-slide-up relative z-10">
               <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 bg-clip-text text-transparent">
-                My Projects
+                Blockchain Solutions & Client Work
               </span>
             </h2>
             {/* Text Shadow */}
             <div className="absolute inset-0 text-6xl md:text-8xl font-black text-primary-500/20 blur-sm animate-pulse">
-              My Projects
+              Blockchain Solutions & Client Work
             </div>
           </div>
           
           <div className="mt-8 flex items-center justify-center gap-4">
             <Sparkles className="w-8 h-8 text-accent-400 animate-spin" />
             <p className="text-2xl md:text-3xl text-slate-300 font-semibold">
-              Blockchain & Web3 Innovations
+              Showcasing real-world blockchain applications and Web3 products built for clients and startups
             </p>
             <Star className="w-8 h-8 text-primary-400 animate-pulse" />
           </div>
           
+          {/* Professional Subtitle */}
+          <div className="mt-6 max-w-3xl mx-auto">
+            <p className="text-lg text-slate-400 text-center italic animate-slide-up" style={{animationDelay: '0.3s'}}>
+              Custom blockchain solutions crafted to fit real business needs.
+            </p>
+          </div>
+          
           {/* Decorative Line */}
-          <div className="mt-6 mx-auto w-32 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full animate-pulse"></div>
+          <div className="mt-8 mx-auto w-32 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full animate-pulse"></div>
         </div>
 
         {/* Project Category Toggle */}
@@ -193,7 +201,7 @@ const Projects = () => {
               >
                 <span className="relative flex items-center space-x-2">
                   <Star className="w-5 h-5" />
-                  <span>Main Projects</span>
+                  <span>Client Projects</span>
                 </span>
                 {activeSection === 'main' && (
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-accent-400 opacity-20 rounded-xl blur-lg"></div>
@@ -210,7 +218,7 @@ const Projects = () => {
               >
                 <span className="relative flex items-center space-x-2">
                   <Code className="w-5 h-5" />
-                  <span>Hackathon Projects</span>
+                  <span>Research & Prototypes</span>
                 </span>
                 {activeSection === 'hackathon' && (
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 opacity-20 rounded-xl blur-lg"></div>
@@ -228,12 +236,12 @@ const Projects = () => {
               <div className="relative inline-block">
                 <h3 className="text-5xl md:text-7xl font-black animate-slide-up relative z-10">
                   <span className="bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent drop-shadow-2xl">
-                    Main Projects
+                    Client Projects
                   </span>
                 </h3>
                 {/* Text Shadow */}
                 <div className="absolute inset-0 text-5xl md:text-7xl font-black text-orange-500/30 blur-sm animate-pulse">
-                  Main Projects
+                  Client Projects
                 </div>
               </div>
               
@@ -310,7 +318,7 @@ const Projects = () => {
                       <div className="mb-8">
                         <h5 className="text-lg font-semibold text-slate-200 mb-4 flex items-center">
                           <Code className="w-5 h-5 mr-2 text-accent-400" />
-                          Tech Stack:
+                          Tools & Technologies Used:
                         </h5>
                         <div className="flex flex-wrap gap-3">
                           {project.techStack.map((tech, techIndex) => (
@@ -348,7 +356,7 @@ const Projects = () => {
                               <ExternalLink className="w-6 h-6 group-hover/btn:scale-125 transition-transform duration-500" /> :
                               <Play className="w-6 h-6 group-hover/btn:scale-125 transition-transform duration-500" />
                             }
-                            <span>{project.title.includes('AyurHerb') ? 'Deployment Link' : 'Demo Video'}</span>
+                            <span>{project.title.includes('AyurHerb') ? 'Live Demo' : 'Live Demo'}</span>
                           </span>
                         </button>
                         
@@ -357,7 +365,7 @@ const Projects = () => {
                           className="group/btn relative px-8 py-4 glass rounded-[1.25rem] font-bold text-white border-2 border-white/30 hover:border-white/60 backdrop-blur-xl hover:bg-white/10 transform hover:scale-110 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex-1">
                           <span className="relative flex items-center justify-center space-x-3">
                             <Github className="w-6 h-6 group-hover/btn:rotate-12 transition-transform duration-300" />
-                            <span>Code</span>
+                            <span>View Code</span>
                           </span>
                         </button>
                       </div>
@@ -476,7 +484,7 @@ const Projects = () => {
                       <div className="mb-8">
                         <h5 className="text-lg font-semibold text-slate-200 mb-4 flex items-center">
                           <Code className="w-5 h-5 mr-2 text-accent-400" />
-                          Tech Stack:
+                          Tools & Technologies Used:
                         </h5>
                         <div className="flex flex-wrap gap-3">
                           {project.techStack.map((tech, techIndex) => (
@@ -520,7 +528,7 @@ const Projects = () => {
                           className="group/btn relative px-8 py-4 glass rounded-[1.25rem] font-bold text-white border-2 border-white/30 hover:border-white/60 backdrop-blur-xl hover:bg-white/10 transform hover:scale-110 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex-1">
                           <span className="relative flex items-center justify-center space-x-3">
                             <Github className="w-6 h-6 group-hover/btn:rotate-12 transition-transform duration-300" />
-                            <span>Code</span>
+                            <span>View Code</span>
                           </span>
                         </button>
                       </div>

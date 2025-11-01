@@ -255,10 +255,10 @@ const Skills = ({ setCurrentPage }) => {
         {/* Enhanced Floating Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
           {[
-            { number: '25+', label: 'Technologies', icon: Code, color: 'from-blue-500 to-cyan-500', bgColor: 'bg-blue-500/10' },
-            { number: '5+', label: 'Categories', icon: Database, color: 'from-purple-500 to-pink-500', bgColor: 'bg-purple-500/10' },
-            { number: '2+', label: 'Years Learning', icon: Zap, color: 'from-orange-500 to-red-500', bgColor: 'bg-orange-500/10' },
-            { number: '∞', label: 'Passion', icon: Sparkles, color: 'from-green-500 to-emerald-500', bgColor: 'bg-green-500/10' }
+            { number: '10+', label: 'Blockchain Tools Used', icon: Code, color: 'from-blue-500 to-cyan-500', bgColor: 'bg-blue-500/10' },
+            { number: '5+', label: 'Domains Covered', icon: Database, color: 'from-purple-500 to-pink-500', bgColor: 'bg-purple-500/10' },
+            { number: '2+', label: 'Years in Web3', icon: Zap, color: 'from-orange-500 to-red-500', bgColor: 'bg-orange-500/10' },
+            { number: '100%', label: 'Client Focus', icon: Sparkles, color: 'from-green-500 to-emerald-500', bgColor: 'bg-green-500/10' }
           ].map((stat, index) => (
             <div
               key={stat.label}
