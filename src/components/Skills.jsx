@@ -89,19 +89,19 @@ const Skills = ({ setCurrentPage }) => {
           <div className="relative inline-block">
             <h2 className="text-6xl md:text-8xl font-black animate-slide-up relative z-10">
               <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 bg-clip-text text-transparent">
-                My Skills
+                Blockchain & Web3 Expertise
               </span>
             </h2>
             {/* Text Shadow */}
             <div className="absolute inset-0 text-6xl md:text-8xl font-black text-primary-500/20 blur-sm animate-pulse">
-              My Skills
+              Blockchain & Web3 Expertise
             </div>
           </div>
           
           <div className="mt-8 flex items-center justify-center gap-4">
             <Sparkles className="w-8 h-8 text-accent-400 animate-spin" />
             <p className="text-2xl md:text-3xl text-slate-300 font-semibold">
-              Technologies & Tools I Master
+              Technologies I Use to Build Powerful Decentralized Solutions
             </p>
             <Star className="w-8 h-8 text-primary-400 animate-pulse" />
           </div>
