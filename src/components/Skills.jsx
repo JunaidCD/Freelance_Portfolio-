@@ -6,39 +6,46 @@ const Skills = ({ setCurrentPage }) => {
 
   const skillCategories = [
     {
-      title: 'Blockchain & Web3',
+      title: 'Blockchain Development',
       icon: Shield,
       color: 'from-purple-500 to-indigo-600',
       glowColor: 'shadow-purple-500/50',
-      skills: ['Foundry', 'Cairo', 'Solidity', 'Ethereum', 'Ethers.js', 'Web3.js']
+      skills: ['Solidity', 'Ethereum', 'Hardhat / Foundry', 'Web3.js / Ethers.js', 'Polygon / BSC / Avalanche', 'Cairo']
     },
     {
-      title: 'Programming Languages',
-      icon: Code,
+      title: 'DApp & Integration',
+      icon: Globe,
       color: 'from-blue-500 to-cyan-500',
       glowColor: 'shadow-blue-500/50',
-      skills: ['Rust', 'JavaScript', 'Python', 'C', 'HTML', 'CSS']
+      skills: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'WalletConnect / MetaMask', 'IPFS / Pinata']
     },
     {
-      title: 'Frameworks & Libraries',
-      icon: Cpu,
+      title: 'Testing & Security',
+      icon: Zap,
+      color: 'from-red-500 to-orange-500',
+      glowColor: 'shadow-red-500/50',
+      skills: ['Chai / Mocha', 'Slither / Mythril', 'Gas optimization & debugging']
+    },
+    {
+      title: 'DevOps & Deployment',
+      icon: Wrench,
       color: 'from-green-500 to-emerald-500',
       glowColor: 'shadow-green-500/50',
-      skills: ['Node.js', 'Express.js', 'React.js', 'OpenCV', 'TensorFlow']
+      skills: ['Git / GitHub', 'Vercel / Render / Netlify', 'Docker']
     },
     {
-      title: 'Dev Tools & Platforms',
-      icon: Wrench,
-      color: 'from-orange-500 to-red-500',
-      glowColor: 'shadow-orange-500/50',
-      skills: ['Git', 'GitHub Copilot', 'Cursor', 'VS Code', 'Docker', 'Vercel', 'Render', 'Netlify']
-    },
-    {
-      title: 'UI/Styling',
+      title: 'Frontend Styling',
       icon: Palette,
       color: 'from-pink-500 to-rose-500',
       glowColor: 'shadow-pink-500/50',
       skills: ['Tailwind CSS', 'Shadcn/UI']
+    },
+    {
+      title: 'Additional Tools',
+      icon: Code,
+      color: 'from-indigo-500 to-purple-500',
+      glowColor: 'shadow-indigo-500/50',
+      skills: ['VS Code / Cursor / GitHub Copilot', 'The Graph / Chainlink Oracles']
     }
   ]
 
@@ -86,28 +93,44 @@ const Skills = ({ setCurrentPage }) => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced Header */}
         <div className="text-center mb-20">
-          <div className="relative inline-block">
-            <h2 className="text-6xl md:text-8xl font-black animate-slide-up relative z-10">
-              <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 bg-clip-text text-transparent">
+          {/* Main Title */}
+          <div className="relative mb-8">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black animate-slide-up relative z-10 text-center">
+              <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 bg-clip-text text-transparent block">
                 Blockchain & Web3 Expertise
               </span>
             </h2>
             {/* Text Shadow */}
-            <div className="absolute inset-0 text-6xl md:text-8xl font-black text-primary-500/20 blur-sm animate-pulse">
+            <div className="absolute inset-0 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-primary-500/20 blur-sm animate-pulse text-center">
               Blockchain & Web3 Expertise
             </div>
           </div>
           
-          <div className="mt-8 flex items-center justify-center gap-4">
-            <Sparkles className="w-8 h-8 text-accent-400 animate-spin" />
-            <p className="text-2xl md:text-3xl text-slate-300 font-semibold">
-              Technologies I Use to Build Powerful Decentralized Solutions
-            </p>
-            <Star className="w-8 h-8 text-primary-400 animate-pulse" />
+          {/* Enhanced Intro Section */}
+          <div className="relative max-w-5xl mx-auto">
+            {/* Decorative Elements */}
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full animate-pulse"></div>
+            
+            {/* Glass Card Container */}
+            <div className="relative glass p-8 md:p-10 rounded-3xl border border-white/10 backdrop-blur-xl animate-slide-up" style={{animationDelay: '0.3s'}}>
+              {/* Background Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 via-accent-500/5 to-purple-500/5 rounded-3xl"></div>
+              
+              {/* Floating Orbs */}
+              <div className="absolute -top-2 -right-2 w-12 h-12 bg-gradient-to-r from-primary-400/20 to-accent-400/20 rounded-full blur-xl animate-pulse"></div>
+              <div className="absolute -bottom-2 -left-2 w-8 h-8 bg-gradient-to-r from-accent-400/20 to-purple-400/20 rounded-full blur-lg animate-bounce"></div>
+              
+              {/* Content */}
+              <div className="relative z-10">
+                <p className="text-lg md:text-xl text-slate-300 leading-relaxed text-center">
+                  Here are the tools and technologies I use to deliver <span className="text-primary-400 font-semibold">secure</span>, <span className="text-accent-400 font-semibold">efficient</span>, and <span className="text-purple-400 font-semibold">scalable</span> blockchain-based applications for my clients — from smart contracts to full-stack decentralized apps.
+                </p>
+              </div>
+            </div>
+            
+            {/* Bottom Decorative Line */}
+            <div className="mt-8 mx-auto w-32 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full animate-pulse"></div>
           </div>
-          
-          {/* Decorative Line */}
-          <div className="mt-6 mx-auto w-32 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full animate-pulse"></div>
         </div>
 
         {/* Enhanced Skills Grid */}
