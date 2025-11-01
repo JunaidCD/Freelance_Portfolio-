@@ -90,12 +90,12 @@ const Hero = ({ setCurrentPage }) => {
             
             {/* Enhanced Tagline */}
             <div className="relative">
-              <div className="text-3xl md:text-5xl font-bold text-slate-200 flex items-center justify-center gap-4 animate-slide-up" style={{animationDelay: '0.3s'}}>
-                <Sparkles className="w-8 h-8 text-accent-400 animate-spin" />
-                <span className="bg-gradient-to-r from-accent-400 via-primary-400 to-blue-400 bg-clip-text text-transparent">
-                  Blockchain Developer
+              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-200 flex items-center justify-center gap-2 sm:gap-4 animate-slide-up px-4" style={{animationDelay: '0.3s'}}>
+                <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-accent-400 animate-spin flex-shrink-0" />
+                <span className="bg-gradient-to-r from-accent-400 via-primary-400 to-blue-400 bg-clip-text text-transparent whitespace-nowrap text-center">
+                  Blockchain Developer | Smart Contract Engineer
                 </span>
-                <Code className="w-8 h-8 text-primary-400 animate-pulse" />
+                <Code className="w-6 h-6 sm:w-8 sm:h-8 text-primary-400 animate-pulse flex-shrink-0" />
               </div>
               
               {/* Decorative Line */}
@@ -104,7 +104,7 @@ const Hero = ({ setCurrentPage }) => {
             {/* Enhanced Description */}
             <div className="relative glass p-8 rounded-3xl border border-white/10 backdrop-blur-xl animate-slide-up max-w-5xl mx-auto" style={{animationDelay: '0.5s'}}>
               <p className="text-xl md:text-2xl text-slate-300 leading-relaxed">
-                Hi, I'm <span className="gradient-text font-bold">Junaid Mollah</span>, a <span className="text-emerald-400 font-semibold">Blockchain Developer</span> currently pursuing B.Tech in Computer Science Engineering. I have hands-on experience in building <span className="text-cyan-400 font-semibold">decentralized applications (dApps)</span>, designing <span className="text-emerald-400 font-semibold">Ethereum smart contracts using Solidity</span>, and implementing DAO systems. Alongside blockchain, I am skilled in <span className="text-blue-400 font-semibold">full-stack web development with React.js, Node.js, and Express.js</span>. I have actively participated in multiple hackathons and worked on impactful projects that showcase my ability to develop innovative and secure blockchain-based solutions.
+                I'm a <span className="text-emerald-400 font-semibold">Blockchain Developer</span> helping startups and businesses launch secure, scalable <span className="text-cyan-400 font-semibold">Web3 products</span>. I design and develop <span className="text-emerald-400 font-semibold">smart contracts using Solidity</span> and build complete <span className="text-cyan-400 font-semibold">decentralized applications (dApps)</span> with smooth frontend integration. From <span className="text-blue-400 font-semibold">ERC-20/721/1155 tokens</span> to <span className="text-purple-400 font-semibold">staking, vesting, and DEX systems</span> — I deliver production-ready blockchain solutions with precision, reliability, and clean code.
               </p>
             </div>
           </div>
@@ -127,9 +127,8 @@ const Hero = ({ setCurrentPage }) => {
                 <ChevronDown className="w-6 h-6 group-hover:translate-y-2 group-hover:animate-bounce transition-all duration-300" />
               </span>
             </button>
-            <button 
-              onClick={() => window.open('https://drive.google.com/drive/folders/1PDaWCo8aNnuvS58Yi-mWW8d6fDJPIn74?usp=sharing', '_blank')}
-              className="group relative px-8 py-4 glass rounded-2xl font-bold text-white border-2 border-white/30 hover:border-primary-400/80 backdrop-blur-xl hover:bg-gradient-to-r hover:from-primary-500/20 hover:via-accent-500/20 hover:to-purple-500/20 transform hover:scale-110 hover:-translate-y-2 transition-all duration-500 overflow-hidden active:bg-gradient-to-r active:from-primary-500 active:via-accent-500 active:to-purple-500 active:border-accent-400 active:shadow-2xl active:shadow-primary-500/50"
+            <div 
+              className="group relative px-8 py-4 glass rounded-2xl font-bold text-white border-2 border-white/30 backdrop-blur-xl cursor-default"
             >
               {/* Colorful Click Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 opacity-0 group-hover:opacity-30 group-active:opacity-100 transition-all duration-300 blur-sm"></div>
@@ -139,9 +138,9 @@ const Hero = ({ setCurrentPage }) => {
               
               <span className="relative flex items-center space-x-3 group-active:text-white group-active:drop-shadow-lg">
                 <Eye className="w-6 h-6 group-hover:animate-bounce group-active:animate-spin group-active:text-yellow-300 transition-all duration-300" />
-                <span className="group-active:bg-gradient-to-r group-active:from-yellow-300 group-active:via-pink-300 group-active:to-purple-300 group-active:bg-clip-text group-active:text-transparent transition-all duration-300">View Resume</span>
+                <span>Hire Me</span>
               </span>
-            </button>
+            </div>
           </div>
 
           {/* Enhanced Social Links */}
