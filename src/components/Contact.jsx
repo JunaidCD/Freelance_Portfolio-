@@ -188,25 +188,38 @@ const Contact = () => {
           <div className="relative inline-block">
             <h2 className="text-6xl md:text-8xl font-black animate-slide-up relative z-10">
               <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 bg-clip-text text-transparent">
-                Contact Me
+                Let's <span className="text-emerald-400">Work</span> <span className="text-cyan-400">Together</span>
               </span>
             </h2>
             {/* Text Shadow */}
-            <div className="absolute inset-0 text-6xl md:text-8xl font-black text-primary-500/20 blur-sm animate-pulse">
-              Contact Me
+            <div className="absolute inset-0 text-6xl md:text-8xl font-black text-slate-500/20 blur-sm animate-pulse">
+              Let's Work Together
             </div>
           </div>
           
-          <div className="mt-8 flex items-center justify-center gap-4">
-            <MessageCircle className="w-8 h-8 text-accent-400 animate-bounce" />
-            <p className="text-2xl md:text-3xl text-slate-300 font-semibold">
-              Let's Build Something Amazing Together
+          <div className="mt-6 text-center">
+            <p className="text-lg text-slate-400 font-medium mb-8">
+              Available for <span className="text-primary-400 font-semibold">freelance projects</span>, <span className="text-accent-400 font-semibold">collaborations</span>, and <span className="text-emerald-400 font-semibold">technical consulting</span>.
             </p>
-            <Star className="w-8 h-8 text-primary-400 animate-pulse" />
+          </div>
+          
+          <div className="mt-8 max-w-3xl mx-auto">
+            <div className="relative p-6 rounded-xl border border-slate-700/50 bg-slate-800/30 backdrop-blur-sm">
+              <div className="relative z-10">
+                <p className="text-lg text-slate-300 leading-relaxed text-center">
+                  I help clients build <span className="text-emerald-400 font-semibold">secure</span>, <span className="text-cyan-400 font-semibold">efficient</span>, and <span className="text-primary-400 font-semibold">scalable</span> web and blockchain solutions. Whether you need <span className="text-accent-400 font-semibold">smart contract development</span>, <span className="text-purple-400 font-semibold">full-stack integration</span>, or <span className="text-yellow-400 font-semibold">product consultation</span> — I ensure <span className="text-green-400 font-bold">reliable results</span> tailored to your goals.
+                </p>
+              </div>
+            </div>
           </div>
           
           {/* Decorative Line */}
           <div className="mt-6 mx-auto w-32 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full animate-pulse"></div>
+        </div>
+
+        {/* Subtle Divider Line */}
+        <div className="mb-16">
+          <div className="mx-auto w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-slate-600/50 to-transparent"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -215,8 +228,8 @@ const Contact = () => {
             <div>
               <div className="mb-8">
                 <h3 className="text-4xl md:text-5xl font-black mb-4 text-center">
-                  <span className="bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-2xl">
-                    Let's Start a Conversation
+                  <span className="bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-lg">
+                    <span className="text-emerald-400">Get</span> in <span className="text-cyan-400">Touch</span>
                   </span>
                 </h3>
                 <div className="flex items-center justify-center gap-3">
@@ -227,12 +240,8 @@ const Contact = () => {
               </div>
               <div className="relative glass rounded-2xl border border-white/10 backdrop-blur-xl p-6 mb-8">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 via-accent-500/5 to-purple-500/5 rounded-2xl"></div>
-                <p className="relative text-lg text-slate-200 leading-relaxed font-medium">
-                  🚀 <span className="text-accent-400 font-bold">Ready to innovate?</span> I'm passionate about collaborating on <span className="text-primary-400 font-semibold">cutting-edge blockchain projects</span> and <span className="text-emerald-400 font-semibold">revolutionary web solutions</span>. 
-                  <br /><br />
-                  💡 Whether you're looking to <span className="text-cyan-400 font-semibold">build the next big dApp</span>, need a <span className="text-purple-400 font-semibold">full-stack development partner</span>, or simply want to discuss about technology - I'm here for it!
-                  <br /><br />
-                  ✨ <span className="text-yellow-400 font-bold">Let's create something extraordinary together!</span>
+                <p className="relative text-base text-slate-300 leading-relaxed">
+                  <span className="text-primary-400 font-semibold">Ready to start</span> your project? I'm here to help with <span className="text-emerald-400 font-semibold">development</span>, <span className="text-cyan-400 font-semibold">consultation</span>, and <span className="text-purple-400 font-semibold">technical guidance</span>. Let's <span className="text-accent-400 font-semibold">discuss your requirements</span> and explore how we can <span className="text-yellow-400 font-bold">work together</span>.
                 </p>
               </div>
             </div>
@@ -263,6 +272,11 @@ const Contact = () => {
                           </h4>
                           <p className="text-lg text-slate-300 group-hover:text-slate-200 transition-colors duration-300">
                             {info.value}
+                            {info.title === 'Email' && (
+                              <span className="block text-sm text-slate-400 mt-1 font-medium">
+                                For business or freelance inquiries.
+                              </span>
+                            )}
                           </p>
                           <div className={`h-1 bg-gradient-to-r ${info.color} rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left mt-2`}></div>
                         </div>
