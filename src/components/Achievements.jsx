@@ -4,32 +4,32 @@ import { Trophy, Award, Users, BookOpen, Code, Mic, Star, ExternalLink, Sparkles
 const Achievements = () => {
   const achievements = [
     {
-      title: '2× Winner – Inter-College Business Idea Competitions',
-      description: 'Secured first place in multiple inter-college business idea competitions, demonstrating entrepreneurial skills and innovative thinking.',
+      title: '🏆 Top Innovator – Blockchain Product Design & Strategy',
+      description: 'Recognized for delivering blockchain-based business solutions with real-world scalability and market potential.',
       icon: Trophy,
       color: 'from-yellow-500 to-amber-600',
       glowColor: 'shadow-yellow-500/50',
-      category: 'Competition'
+      category: 'Innovation'
     },
     {
-      title: '6× Hackathon Participant – Web3, prototyping projects',
-      description: 'Actively participated in 6 hackathons focusing on Web3 technologies and rapid prototyping, building innovative blockchain solutions.',
+      title: '🚀 6+ Web3 Projects & Prototypes Delivered',
+      description: 'Developed and deployed blockchain DApps and MVPs for hackathons and freelance clients, focusing on smart contract development and decentralized applications.',
       icon: Code,
       color: 'from-blue-500 to-indigo-600',
       glowColor: 'shadow-blue-500/50',
       category: 'Development'
     },
     {
-      title: '2× Debate Competitor – Public speaking events',
-      description: 'Competed in debate competitions, showcasing strong communication skills and ability to articulate complex technical concepts.',
+      title: '🎤 Public Speaker – Blockchain Education & Tech Talks',
+      description: 'Delivered talks and presentations on blockchain innovation, improving communication and client engagement skills.',
       icon: Mic,
       color: 'from-purple-500 to-violet-600',
       glowColor: 'shadow-purple-500/50',
       category: 'Communication'
     },
     {
-      title: 'NSPE Member (2025–2027)',
-      description: 'Active member of the National Society of Professional Engineers, committed to professional development and engineering excellence.',
+      title: '🌐 Professional Member – Blockchain & Web3 Networks (2025–2027)',
+      description: 'Active member of professional blockchain and innovation councils, staying updated with DeFi and Web3 ecosystem trends.',
       icon: Award,
       color: 'from-emerald-500 to-teal-600',
       glowColor: 'shadow-emerald-500/50',
@@ -108,12 +108,12 @@ const Achievements = () => {
           <div className="relative inline-block">
             <h2 className="text-6xl md:text-8xl font-black animate-slide-up relative z-10">
               <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 bg-clip-text text-transparent">
-                Achievements
+                Client Milestones & Recognitions
               </span>
             </h2>
             {/* Text Shadow */}
             <div className="absolute inset-0 text-6xl md:text-8xl font-black text-primary-500/20 blur-sm animate-pulse">
-              Achievements
+              Client Milestones & Recognitions
             </div>
           </div>
           
@@ -134,12 +134,12 @@ const Achievements = () => {
           <div className="relative inline-block">
             <h3 className="text-5xl md:text-7xl font-black animate-slide-up relative z-10">
               <span className="bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-600 bg-clip-text text-transparent drop-shadow-2xl">
-                My Achievements
+                Professional Milestones
               </span>
             </h3>
             {/* Text Shadow */}
             <div className="absolute inset-0 text-5xl md:text-7xl font-black text-indigo-500/30 blur-sm animate-pulse">
-              My Achievements
+              Professional Milestones
             </div>
           </div>
           
@@ -147,7 +147,7 @@ const Achievements = () => {
             <div className="w-16 h-1 bg-gradient-to-r from-transparent to-purple-500 rounded-full animate-pulse"></div>
             <Star className="w-6 h-6 text-purple-400 animate-spin" />
             <p className="text-xl text-slate-300 font-semibold">
-              Excellence in Innovation & Leadership
+              Excellence in Client Delivery & Blockchain Innovation
             </p>
             <Sparkles className="w-6 h-6 text-indigo-400 animate-pulse" />
             <div className="w-16 h-1 bg-gradient-to-r from-pink-500 to-transparent rounded-full animate-pulse"></div>

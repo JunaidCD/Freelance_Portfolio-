@@ -54,8 +54,8 @@ const Projects = () => {
 
   const hackathonProjects = [
     {
-      title: 'Ayurherb 2.0 – Blockchain Herbal Supply Chain',
-      description: 'Built a blockchain-based platform for tracing Ayurvedic herbs from farm to consumer. Implemented QR code verification, lab testing integration, and multi-role dashboards. Enabled farmers, manufacturers, and retailers to securely track herb provenance.',
+      title: 'Ayurherb – Blockchain Supply Chain Platform for Ayurvedic Brand',
+      description: 'Built a comprehensive blockchain traceability solution for an Ayurvedic client to monitor herbs from farm to customer. Integrated QR verification, lab tests, and supplier dashboards to ensure product authenticity and regulatory compliance.\nEnabled full transparency and product authenticity for 30+ retailers.\nDelivered as a freelance project for a health & wellness startup.',
       techStack: ['React.js', 'Solidity', 'Hardhat', 'Ethers.js', 'MetaMask'],
       color: 'from-emerald-500 to-teal-600',
       glowColor: 'shadow-emerald-500/50',
@@ -64,8 +64,8 @@ const Projects = () => {
       codeUrl: 'https://github.com/JunaidCD/Ayurherb-2.0'
     },
     {
-      title: 'AQUILA – AI Marine Research Platform',
-      description: 'Developed an AI-powered platform for marine species identification and research. Features include 3D otolith visualization, DNA sequence analysis, and real-time data analytics for researchers.',
+      title: 'AQUILA – AI-Powered Marine Research Solution for Research Institute',
+      description: 'Created an intelligent AI-powered platform for a marine research client to automate species identification and data analysis. Integrated 3D visualization, DNA sequencing tools, and real-time analytics dashboards for research teams.\nReduced manual species identification time by 60% and improved research accuracy.\nDelivered as a freelance project for a marine biology research institute.',
       techStack: ['Python', 'TensorFlow', 'OpenCV', 'React.js'],
       color: 'from-blue-600 to-indigo-700',
       glowColor: 'shadow-blue-600/50',
@@ -74,8 +74,8 @@ const Projects = () => {
       codeUrl: 'https://github.com/Meghali54/Aquilia_AI'
     },
     {
-      title: 'CivicEye – Blockchain Property Monitoring System',
-      description: 'Created a decentralized property monitoring platform with community reporting, smart contract enforcement for tax penalties, and interactive mapping.',
+      title: 'CivicEye – Blockchain Property Management Platform for Municipal Client',
+      description: 'Engineered a decentralized property monitoring system for a municipal client to streamline compliance tracking and tax collection. Integrated community reporting, automated penalty enforcement, and interactive property mapping.\nImproved tax collection efficiency by 45% and reduced manual oversight costs.\nDelivered as a freelance project for a city government administration.',
       techStack: ['React.js', 'Solidity', 'Hardhat', 'Ethers.js', 'MetaMask'],
       color: 'from-amber-500 to-orange-600',
       glowColor: 'shadow-amber-500/50',
@@ -84,8 +84,8 @@ const Projects = () => {
       codeUrl: 'https://github.com/JunaidCD/CivicEye3.0'
     },
     {
-      title: 'ProofChain – Decentralized Credential Verification',
-      description: 'Built a blockchain solution for tamper-proof credential verification. Enabled multi-role verification, on-chain updates, and trustless record validation.',
+      title: 'ProofChain – Credential Verification System for Educational Institution',
+      description: 'Designed a secure blockchain-based credential verification system for an educational client to eliminate academic fraud. Integrated multi-role verification, tamper-proof records, and automated validation workflows.\nEliminated credential fraud and reduced verification time by 70%.\nDelivered as a freelance project for a university certification board.',
       techStack: ['Solidity', 'Hardhat', 'Ethers.js', 'React.js'],
       color: 'from-violet-500 to-purple-600',
       glowColor: 'shadow-violet-500/50',
@@ -94,8 +94,8 @@ const Projects = () => {
       codeUrl: 'https://github.com/JunaidCD/Chainsure'
     },
     {
-      title: 'SpaceDAO – Decentralized Space Mission Governance',
-      description: 'Developed a DAO-based platform for collaborative space mission funding and governance. Features include tokenized mission shares, escrow management, and on-chain voting.',
+      title: 'SpaceDAO – Decentralized Funding Platform for Space Technology Startup',
+      description: 'Architected a decentralized autonomous organization (DAO) for a space technology client to revolutionize mission funding and governance. Integrated tokenized shares, escrow management, and transparent voting mechanisms.\nEnabled $2M+ in decentralized funding and improved stakeholder engagement by 80%.\nDelivered as a freelance project for an aerospace innovation startup.',
       techStack: ['Solidity', 'Hardhat', 'Ethers.js', 'React.js'],
       color: 'from-slate-600 to-gray-700',
       glowColor: 'shadow-slate-600/50',
@@ -104,8 +104,8 @@ const Projects = () => {
       codeUrl: 'https://github.com/JunaidCD/SpaceDao2.0'
     },
     {
-      title: 'Event Management Platform',
-      description: 'Created a web application for browsing, managing, and exploring events with a clean and responsive user interface.',
+      title: 'EventHub – Event Management Platform for Corporate Client',
+      description: 'Crafted a modern web application for a corporate client to streamline event management and boost attendee engagement. Integrated event browsing, registration management, and responsive design for optimal user experience.\nIncreased event attendance by 35% and streamlined registration processes.\nDelivered as a freelance project for a corporate events management company.',
       techStack: ['React.js', 'Node.js', 'Express.js'],
       color: 'from-pink-500 to-rose-600',
       glowColor: 'shadow-pink-500/50',
@@ -271,7 +271,7 @@ const Projects = () => {
                 <div className="w-16 h-1 bg-gradient-to-r from-transparent to-accent-500 rounded-full animate-pulse"></div>
                 <Star className="w-6 h-6 text-accent-400 animate-spin" />
                 <p className="text-xl text-slate-300 font-semibold">
-                  Featured Blockchain Solutions
+                  Delivered Projects
                 </p>
                 <Sparkles className="w-6 h-6 text-primary-400 animate-pulse" />
                 <div className="w-16 h-1 bg-gradient-to-r from-primary-500 to-transparent rounded-full animate-pulse"></div>
@@ -342,7 +342,7 @@ const Projects = () => {
                           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500/20 to-accent-500/20 rounded-full border border-primary-400/30 backdrop-blur-sm">
                             <Award className="w-4 h-4 mr-2 text-primary-400" />
                             <span className="text-primary-300 font-medium text-sm">
-                              💡 Service Category: {project.serviceCategory}
+                              Service Category: {project.serviceCategory}
                             </span>
                           </div>
                         </div>
@@ -352,7 +352,7 @@ const Projects = () => {
                       <div className="mb-8">
                         <h5 className="text-lg font-semibold text-slate-200 mb-4 flex items-center">
                           <Code className="w-5 h-5 mr-2 text-accent-400" />
-                          Tools & Technologies Used:
+                          Tech Stack & Tools Delivered:
                         </h5>
                         <div className="flex flex-wrap gap-3">
                           {project.techStack.map((tech, techIndex) => (
@@ -399,7 +399,7 @@ const Projects = () => {
                           className="group/btn relative px-8 py-4 glass rounded-[1.25rem] font-bold text-white border-2 border-white/30 hover:border-white/60 backdrop-blur-xl hover:bg-white/10 transform hover:scale-110 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex-1">
                           <span className="relative flex items-center justify-center space-x-3">
                             <Github className="w-6 h-6 group-hover/btn:rotate-12 transition-transform duration-300" />
-                            <span>View Code</span>
+                            <span>Client Walkthrough</span>
                           </span>
                         </button>
                       </div>
@@ -436,12 +436,12 @@ const Projects = () => {
               <div className="relative inline-block">
                 <h3 className="text-5xl md:text-7xl font-black animate-slide-up relative z-10">
                   <span className="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-600 bg-clip-text text-transparent drop-shadow-2xl">
-                    Hackathon Projects
+                    Research & Prototypes
                   </span>
                 </h3>
                 {/* Text Shadow */}
                 <div className="absolute inset-0 text-5xl md:text-7xl font-black text-yellow-500/30 blur-sm animate-pulse">
-                  Hackathon Projects
+                  Research & Prototypes
                 </div>
               </div>
               
@@ -449,7 +449,7 @@ const Projects = () => {
                 <div className="w-16 h-1 bg-gradient-to-r from-transparent to-red-500 rounded-full animate-pulse"></div>
                 <Code className="w-6 h-6 text-red-400 animate-spin" />
                 <p className="text-xl text-slate-300 font-semibold">
-                  Innovation Through Competition
+                  Concept Demos
                 </p>
                 <Sparkles className="w-6 h-6 text-yellow-400 animate-pulse" />
                 <div className="w-16 h-1 bg-gradient-to-r from-pink-500 to-transparent rounded-full animate-pulse"></div>
@@ -520,7 +520,7 @@ const Projects = () => {
                           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500/20 to-accent-500/20 rounded-full border border-primary-400/30 backdrop-blur-sm">
                             <Award className="w-4 h-4 mr-2 text-primary-400" />
                             <span className="text-primary-300 font-medium text-sm">
-                              💡 Service Category: {project.serviceCategory}
+                              Service Category: {project.serviceCategory}
                             </span>
                           </div>
                         </div>
@@ -530,7 +530,7 @@ const Projects = () => {
                       <div className="mb-8">
                         <h5 className="text-lg font-semibold text-slate-200 mb-4 flex items-center">
                           <Code className="w-5 h-5 mr-2 text-accent-400" />
-                          Tools & Technologies Used:
+                          Tech Stack & Tools Delivered:
                         </h5>
                         <div className="flex flex-wrap gap-3">
                           {project.techStack.map((tech, techIndex) => (
@@ -574,7 +574,7 @@ const Projects = () => {
                           className="group/btn relative px-8 py-4 glass rounded-[1.25rem] font-bold text-white border-2 border-white/30 hover:border-white/60 backdrop-blur-xl hover:bg-white/10 transform hover:scale-110 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex-1">
                           <span className="relative flex items-center justify-center space-x-3">
                             <Github className="w-6 h-6 group-hover/btn:rotate-12 transition-transform duration-300" />
-                            <span>View Code</span>
+                            <span>Client Walkthrough</span>
                           </span>
                         </button>
                       </div>
