@@ -15,8 +15,8 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
 
   const navItems = [
     { name: 'About me', page: 'home', icon: Home },
-    { name: 'My Skills', page: 'skills', icon: Code },
-    { name: 'My Projects', page: 'projects', icon: Briefcase },
+    { name: 'My Services', page: 'skills', icon: Code },
+    { name: 'My Work', page: 'projects', icon: Briefcase },
     { name: 'Achievements', page: 'achievements', icon: Trophy },
     { name: 'Contact Me', page: 'contact', icon: MessageCircle },
   ]

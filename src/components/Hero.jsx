@@ -127,8 +127,9 @@ const Hero = ({ setCurrentPage }) => {
                 <ChevronDown className="w-6 h-6 group-hover:translate-y-2 group-hover:animate-bounce transition-all duration-300" />
               </span>
             </button>
-            <div 
-              className="group relative px-8 py-4 glass rounded-2xl font-bold text-white border-2 border-white/30 backdrop-blur-xl cursor-default"
+            <button 
+              onClick={() => setCurrentPage('contact')}
+              className="group relative px-8 py-4 glass rounded-2xl font-bold text-white border-2 border-white/30 backdrop-blur-xl cursor-pointer hover:border-white/50 transition-all duration-300"
             >
               {/* Colorful Click Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 opacity-0 group-hover:opacity-30 group-active:opacity-100 transition-all duration-300 blur-sm"></div>
@@ -140,7 +141,7 @@ const Hero = ({ setCurrentPage }) => {
                 <Eye className="w-6 h-6 group-hover:animate-bounce group-active:animate-spin group-active:text-yellow-300 transition-all duration-300" />
                 <span>Hire Me</span>
               </span>
-            </div>
+            </button>
           </div>
 
           {/* Enhanced Social Links */}
