@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Play, Github, Sparkles, Star, Code, Zap, Shield, Globe, Leaf, Brain, Eye, Award, Rocket, Calendar, ExternalLink } from 'lucide-react'
+import { Play, Github, Sparkles, Star, Code, Zap, Shield, Globe, Leaf, Brain, Eye, Award, Rocket, Calendar, ExternalLink, DollarSign, ShoppingCart, CreditCard } from 'lucide-react'
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
@@ -10,7 +10,7 @@ const Projects = () => {
       title: 'Credence – Decentralized Identity & Credential Verification System',
       description: 'Developed a secure decentralized identity system enabling organizations to issue and verify digital credentials on-chain. Integrated Ethereum smart contracts with role-based access (users, issuers, verifiers) and real-time verification. Helped clients ensure data authenticity, reduce fraud, and automate credential workflows.',
       serviceCategory: 'Smart Contract Development | DApp Development',
-      techStack: ['React.js', 'Solidity', 'Ethers.js', 'Hardhat', 'MetaMask'],
+      techStack: ['React.js', 'Express.js', 'Solidity', 'Ethers.js', 'Web3.js', 'Hardhat', 'MetaMask'],
       color: 'from-purple-500 to-indigo-600',
       glowColor: 'shadow-purple-500/50',
       icon: Shield,
@@ -18,28 +18,31 @@ const Projects = () => {
       codeUrl: 'https://github.com/JunaidCD/Credence'
     },
     {
-      title: 'FinBridge – Decentralized Peer-to-Peer Lending Platform',
-      description: 'Built a decentralized lending platform enabling direct borrower-lender transactions without intermediaries. Implemented auto-calculated interest rates, real-time loan matching, and analytics dashboards. Secured all transactions with audited smart contracts and blockchain event logging.',
+      title: 'FinBridge – Smart DeFi Lending Platform',
+      description: 'Developed a decentralized peer-to-peer lending solution for clients looking to launch fintech platforms without intermediaries. Delivered secure Ethereum smart contracts for automated loan approvals, repayments, and audits. Built analytics dashboards for real-time insights and risk evaluation, ensuring transparency and trust for users.',
+      serviceCategory: 'DeFi Platform Development | Blockchain App Development',
       techStack: ['React.js', 'Solidity', 'Hardhat', 'Ethers.js', 'MetaMask'],
       color: 'from-green-500 to-emerald-500',
       glowColor: 'shadow-green-500/50',
-      icon: Zap,
+      icon: DollarSign,
       demoUrl: 'https://youtu.be/VwHelavo0Ws',
       codeUrl: 'https://github.com/JunaidCD/FinBridge'
     },
     {
-      title: 'Dappazon – Decentralized E-Commerce Platform',
-      description: 'Created a Web3-based e-commerce platform where users can purchase products using Ethereum. Developed smart contracts for product listing, purchasing, and payment processing. Integrated MetaMask for wallet authentication and ensured trustless, transparent transactions.',
+      title: 'Dappazon – Web3 E-Commerce Storefront',
+      description: 'Created a blockchain-based e-commerce platform that enables sellers to list and sell products via crypto payments. Integrated MetaMask wallet, smart contracts for secure transactions, and a user-friendly React frontend. Ideal for businesses or individuals aiming to add crypto checkout to their online store.',
+      serviceCategory: 'Web3 E-Commerce Development | Crypto Payment Integration',
       techStack: ['React.js', 'Solidity', 'Hardhat', 'Ethers.js', 'MetaMask'],
       color: 'from-blue-500 to-cyan-500',
       glowColor: 'shadow-blue-500/50',
-      icon: Globe,
+      icon: ShoppingCart,
       demoUrl: 'https://youtu.be/Lkze7fc2L20',
       codeUrl: 'https://github.com/JunaidCD/D-App'
     },
     {
-      title: 'AyurHerb – Blockchain-Powered Ayurvedic Supply Chain Management',
-      description: 'Comprehensive blockchain-powered supply chain management system for Ayurvedic herbs and medicines. Features role-based access control, immutable herb collection tracking, processing verification, lab testing integration, and complete transparency from collection to consumer delivery using Ethereum blockchain technology.',
+      title: 'AyurHerb – Blockchain Supply Chain Tracking',
+      description: 'Delivered a blockchain-powered traceability solution for herbal and organic product suppliers. Implemented on-chain tracking for batches, lab reports, and product authenticity using smart contracts and QR verification. Helps businesses ensure product transparency and build trust with customers.',
+      serviceCategory: 'Blockchain Supply Chain Solutions | Traceability DApp Development',
       techStack: ['React.js', 'Node.js', 'Express.js', 'Solidity', 'Hardhat', 'Ethers.js', 'TailwindCSS', 'MetaMask'],
       color: 'from-amber-500 to-orange-600',
       glowColor: 'shadow-amber-500/50',
@@ -177,10 +180,29 @@ const Projects = () => {
           </div>
           
           {/* Professional Subtitle */}
-          <div className="mt-6 max-w-3xl mx-auto">
-            <p className="text-lg text-slate-400 text-center italic animate-slide-up" style={{animationDelay: '0.3s'}}>
-              Custom blockchain solutions crafted to fit real business needs.
-            </p>
+          <div className="mt-8 max-w-4xl mx-auto">
+            <div className="relative glass p-6 rounded-2xl border border-white/20 backdrop-blur-xl animate-slide-up" style={{animationDelay: '0.3s'}}>
+              {/* Background Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 via-accent-500/10 to-purple-500/10 rounded-2xl"></div>
+              
+              {/* Decorative Elements */}
+              <div className="absolute -top-1 -right-1 w-8 h-8 bg-gradient-to-r from-primary-400/30 to-accent-400/30 rounded-full blur-lg animate-pulse"></div>
+              <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-gradient-to-r from-accent-400/30 to-purple-400/30 rounded-full blur-md animate-bounce"></div>
+              
+              {/* Content */}
+              <div className="relative z-10">
+                <p className="text-xl md:text-2xl font-semibold text-center leading-relaxed">
+                  <span className="bg-gradient-to-r from-primary-300 via-accent-300 to-purple-300 bg-clip-text text-transparent">
+                    Custom blockchain solutions
+                  </span>
+                  <span className="text-slate-300"> crafted to fit </span>
+                  <span className="bg-gradient-to-r from-accent-300 via-primary-300 to-cyan-300 bg-clip-text text-transparent font-bold">
+                    real business needs
+                  </span>
+                  <span className="text-primary-400">.</span>
+                </p>
+              </div>
+            </div>
           </div>
           
           {/* Decorative Line */}
@@ -313,6 +335,18 @@ const Projects = () => {
                           {project.description}
                         </p>
                       </div>
+
+                      {/* Service Category */}
+                      {project.serviceCategory && (
+                        <div className="mb-8">
+                          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500/20 to-accent-500/20 rounded-full border border-primary-400/30 backdrop-blur-sm">
+                            <Award className="w-4 h-4 mr-2 text-primary-400" />
+                            <span className="text-primary-300 font-medium text-sm">
+                              💡 Service Category: {project.serviceCategory}
+                            </span>
+                          </div>
+                        </div>
+                      )}
 
                       {/* Tech Stack */}
                       <div className="mb-8">
@@ -479,6 +513,18 @@ const Projects = () => {
                           {project.description}
                         </p>
                       </div>
+
+                      {/* Service Category */}
+                      {project.serviceCategory && (
+                        <div className="mb-8">
+                          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500/20 to-accent-500/20 rounded-full border border-primary-400/30 backdrop-blur-sm">
+                            <Award className="w-4 h-4 mr-2 text-primary-400" />
+                            <span className="text-primary-300 font-medium text-sm">
+                              💡 Service Category: {project.serviceCategory}
+                            </span>
+                          </div>
+                        </div>
+                      )}
 
                       {/* Tech Stack */}
                       <div className="mb-8">
