@@ -327,10 +327,9 @@ Feel free to fork this project and customize it for your own portfolio. If you m
 ## 📞 **Support**
 
 If you have any questions or need help customizing the portfolio, feel free to reach out:
-- **Email**: junaidmollah17@gmail.com
-- **LinkedIn**: [Junaid Mollah](https://linkedin.com/in/junaid-mollah-a59150319)
-- **GitHub**: [JunaidCD](https://github.com/JunaidCD)
+- Email: junaidmollah17@gmail.com
+-
 
 ---
 
-**Made with ❤️ by Junaid Mollah - Blockchain Developer & Smart Contract Engineer**
+**Made with ❤️ and lots of coffee by Junaid Mollah**
