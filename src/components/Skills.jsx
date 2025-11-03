@@ -1,51 +1,37 @@
 import React, { useState, useEffect } from 'react'
-import { Code, Zap, Palette, Database, Globe, Wrench, Sparkles, Star, Cpu, Shield } from 'lucide-react'
+import { Code, Zap, Palette, Database, Globe, Wrench, Sparkles, Star, Cpu, Shield, Coins, Smartphone, Lightbulb, FileText } from 'lucide-react'
 
 const Skills = ({ setCurrentPage }) => {
   const [hoveredCategory, setHoveredCategory] = useState(null)
 
-  const skillCategories = [
+  const serviceCategories = [
     {
-      title: 'Blockchain Development',
-      icon: Shield,
+      title: 'Smart Contract Development',
+      icon: FileText,
       color: 'from-purple-500 to-indigo-600',
       glowColor: 'shadow-purple-500/50',
-      skills: ['Solidity', 'Ethereum', 'Hardhat / Foundry', 'Web3.js / Ethers.js', 'Polygon / BSC / Avalanche', 'Cairo']
+      services: ['Custom ERC20, ERC721, ERC1155 tokens', 'Token vesting, staking, and airdrop systems', 'Manual smart contract audits and improvements']
     },
     {
-      title: 'DApp & Integration',
-      icon: Globe,
+      title: 'DApp / Web3 App Development',
+      icon: Smartphone,
       color: 'from-blue-500 to-cyan-500',
       glowColor: 'shadow-blue-500/50',
-      skills: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'WalletConnect / MetaMask', 'IPFS / Pinata']
+      services: ['Full-stack decentralized apps using React / Next.js / Solidity', 'Wallet connection (MetaMask, WalletConnect)', 'Blockchain-based dashboards for on-chain interactions']
     },
     {
-      title: 'Testing & Security',
-      icon: Zap,
-      color: 'from-red-500 to-orange-500',
-      glowColor: 'shadow-red-500/50',
-      skills: ['Chai / Mocha', 'Slither / Mythril', 'Gas optimization & debugging']
+      title: 'NFT & Crypto Solutions',
+      icon: Coins,
+      color: 'from-orange-500 to-pink-500',
+      glowColor: 'shadow-orange-500/50',
+      services: ['NFT minting and marketplace websites', 'Metadata/IPFS integration', 'Launch-ready NFT drop pages']
     },
     {
-      title: 'DevOps & Deployment',
-      icon: Wrench,
+      title: 'Blockchain Consulting & MVPs',
+      icon: Lightbulb,
       color: 'from-green-500 to-emerald-500',
       glowColor: 'shadow-green-500/50',
-      skills: ['Git / GitHub', 'Vercel / Render / Netlify', 'Docker']
-    },
-    {
-      title: 'Frontend Styling',
-      icon: Palette,
-      color: 'from-pink-500 to-rose-500',
-      glowColor: 'shadow-pink-500/50',
-      skills: ['Tailwind CSS', 'Shadcn/UI']
-    },
-    {
-      title: 'Additional Tools',
-      icon: Code,
-      color: 'from-indigo-500 to-purple-500',
-      glowColor: 'shadow-indigo-500/50',
-      skills: ['VS Code / Cursor / GitHub Copilot', 'The Graph / Chainlink Oracles']
+      services: ['Prototype development for startups', 'Smart contract architecture planning', 'Web3 integrations for existing platforms']
     }
   ]
 
@@ -97,12 +83,12 @@ const Skills = ({ setCurrentPage }) => {
           <div className="relative mb-8">
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black animate-slide-up relative z-10 text-center">
               <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 bg-clip-text text-transparent block">
-                Blockchain & Web3 Expertise
+                What I Can Build for You
               </span>
             </h2>
             {/* Text Shadow */}
             <div className="absolute inset-0 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-primary-500/20 blur-sm animate-pulse text-center">
-              Blockchain & Web3 Expertise
+              What I Can Build for You
             </div>
           </div>
           
@@ -123,7 +109,7 @@ const Skills = ({ setCurrentPage }) => {
               {/* Content */}
               <div className="relative z-10">
                 <p className="text-lg md:text-xl text-slate-300 leading-relaxed text-center">
-                  Here are the tools and technologies I use to deliver <span className="text-primary-400 font-semibold">secure</span>, <span className="text-accent-400 font-semibold">efficient</span>, and <span className="text-purple-400 font-semibold">scalable</span> blockchain-based applications for my clients — from smart contracts to full-stack decentralized apps.
+                  Professional Web3 development services tailored to your business needs. From <span className="text-primary-400 font-semibold">smart contracts</span> to <span className="text-accent-400 font-semibold">full-stack dApps</span>, I deliver <span className="text-purple-400 font-semibold">production-ready solutions</span> that drive real results for your project.
                 </p>
               </div>
             </div>
@@ -134,8 +120,8 @@ const Skills = ({ setCurrentPage }) => {
         </div>
 
         {/* Enhanced Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
-          {skillCategories.map((category, index) => (
+        <div className="grid md:grid-cols-2 gap-10 mb-16">
+          {serviceCategories.map((category, index) => (
             <div
               key={category.title}
               className={`group relative perspective-1000 animate-slide-up`}
@@ -178,53 +164,29 @@ const Skills = ({ setCurrentPage }) => {
                       </div>
                     </div>
 
-                    {/* Enhanced Skills Grid */}
-                    <div className="grid grid-cols-1 gap-3">
-                      {category.skills.map((skill, skillIndex) => (
+                    {/* Enhanced Services List */}
+                    <div className="space-y-4">
+                      {category.services.map((service, serviceIndex) => (
                         <div
-                          key={skill}
-                          className="group/skill relative overflow-hidden"
-                          style={{ animationDelay: `${(index * 0.2) + (skillIndex * 0.1)}s` }}
+                          key={service}
+                          className="group/service relative overflow-hidden"
+                          style={{ animationDelay: `${(index * 0.2) + (serviceIndex * 0.1)}s` }}
                         >
-                          {/* Skill Pill */}
-                          <div className={`relative px-5 py-4 bg-gradient-to-r ${category.color} bg-opacity-10 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-500 transform hover:scale-105 hover:translate-x-3 hover:-translate-y-1 cursor-pointer`}>
+                          {/* Service Item */}
+                          <div className={`relative px-6 py-5 bg-gradient-to-r ${category.color} bg-opacity-10 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-500 transform hover:scale-105 hover:translate-x-2 hover:-translate-y-1 cursor-pointer`}>
                             {/* Animated Background */}
-                            <div className={`absolute inset-0 bg-gradient-to-r ${category.color} opacity-0 group-hover/skill:opacity-20 transition-opacity duration-500`}></div>
+                            <div className={`absolute inset-0 bg-gradient-to-r ${category.color} opacity-0 group-hover/service:opacity-20 transition-opacity duration-500 rounded-2xl`}></div>
                             
-                            {/* Skill Content */}
-                            <div className="relative flex items-center justify-between">
-                              <span className="text-slate-200 font-semibold group-hover/skill:text-white transition-colors duration-300 drop-shadow-sm">
-                                {skill}
+                            {/* Service Content */}
+                            <div className="relative flex items-start space-x-4">
+                              <div className={`flex-shrink-0 w-2 h-2 mt-3 bg-gradient-to-r ${category.color} rounded-full group-hover/service:scale-150 transition-transform duration-300`}></div>
+                              <span className="text-slate-200 font-medium leading-relaxed group-hover/service:text-white transition-colors duration-300 drop-shadow-sm">
+                                {service}
                               </span>
-                              
-                              {/* Animated Indicator */}
-                              <div className="flex items-center space-x-2">
-                                <div className={`w-3 h-3 bg-gradient-to-r ${category.color} rounded-full opacity-60 group-hover/skill:opacity-100 group-hover/skill:scale-150 group-hover/skill:rotate-180 transition-all duration-500`}></div>
-                                <div className={`w-2 h-2 bg-gradient-to-r ${category.color} rounded-full opacity-40 group-hover/skill:opacity-80 group-hover/skill:scale-125 transition-all duration-300`} style={{animationDelay: '0.1s'}}></div>
-                                <div className={`w-1 h-1 bg-gradient-to-r ${category.color} rounded-full opacity-20 group-hover/skill:opacity-60 group-hover/skill:scale-150 transition-all duration-400`} style={{animationDelay: '0.2s'}}></div>
-                              </div>
                             </div>
                             
-                            {/* Skill Progress Bar */}
-                            <div className="mt-2 h-1 bg-slate-700/50 rounded-full overflow-hidden">
-                              <div className={`h-full bg-gradient-to-r ${category.color} transform scale-x-0 group-hover/skill:scale-x-100 transition-transform duration-700 origin-left`}></div>
-                            </div>
-                            
-                            {/* Floating Particles */}
-                            <div className="absolute inset-0 overflow-hidden opacity-0 group-hover/skill:opacity-100 transition-opacity duration-500">
-                              {[...Array(3)].map((_, i) => (
-                                <div
-                                  key={i}
-                                  className={`absolute w-1 h-1 bg-gradient-to-r ${category.color} rounded-full animate-float`}
-                                  style={{
-                                    left: `${20 + i * 30}%`,
-                                    top: `${20 + i * 20}%`,
-                                    animationDelay: `${i * 0.2}s`,
-                                    animationDuration: '2s'
-                                  }}
-                                />
-                              ))}
-                            </div>
+                            {/* Hover Glow */}
+                            <div className={`absolute inset-0 bg-gradient-to-r ${category.color} opacity-0 group-hover/service:opacity-10 blur-xl transition-opacity duration-500 rounded-2xl`}></div>
                           </div>
                         </div>
                       ))}
@@ -255,10 +217,10 @@ const Skills = ({ setCurrentPage }) => {
         {/* Enhanced Floating Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
           {[
-            { number: '10+', label: 'Blockchain Tools Used', icon: Code, color: 'from-blue-500 to-cyan-500', bgColor: 'bg-blue-500/10' },
-            { number: '5+', label: 'Domains Covered', icon: Database, color: 'from-purple-500 to-pink-500', bgColor: 'bg-purple-500/10' },
-            { number: '2+', label: 'Years in Web3', icon: Zap, color: 'from-orange-500 to-red-500', bgColor: 'bg-orange-500/10' },
-            { number: '100%', label: 'Client Focus', icon: Sparkles, color: 'from-green-500 to-emerald-500', bgColor: 'bg-green-500/10' }
+            { number: '20+', label: 'Projects Delivered', icon: Code, color: 'from-blue-500 to-cyan-500', bgColor: 'bg-blue-500/10' },
+            { number: '4', label: 'Service Categories', icon: Database, color: 'from-purple-500 to-pink-500', bgColor: 'bg-purple-500/10' },
+            { number: '2+', label: 'Years Experience', icon: Zap, color: 'from-orange-500 to-red-500', bgColor: 'bg-orange-500/10' },
+            { number: '100%', label: 'Client Satisfaction', icon: Sparkles, color: 'from-green-500 to-emerald-500', bgColor: 'bg-green-500/10' }
           ].map((stat, index) => (
             <div
               key={stat.label}
@@ -359,18 +321,18 @@ const Skills = ({ setCurrentPage }) => {
                   {/* Enhanced Title */}
                   <div className="relative mb-8">
                     <h3 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-primary-400 via-accent-400 to-purple-500 bg-clip-text text-transparent drop-shadow-2xl group-hover:scale-105 transition-transform duration-500">
-                      Ready to Build Something Amazing?
+                      Ready to Start Your Project?
                     </h3>
                     {/* Title Glow */}
                     <div className="absolute inset-0 text-4xl md:text-6xl font-black text-primary-500/20 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      Ready to Build Something Amazing?
+                      Ready to Start Your Project?
                     </div>
                   </div>
 
                   {/* Enhanced Description */}
                   <div className="relative mb-10">
                     <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto group-hover:text-slate-200 transition-colors duration-300">
-                      Let's collaborate and create <span className="font-semibold bg-gradient-to-r from-accent-400 to-primary-400 bg-clip-text text-transparent">innovative blockchain solutions</span> together!
+                      Let's discuss your vision and create <span className="font-semibold bg-gradient-to-r from-accent-400 to-primary-400 bg-clip-text text-transparent">professional Web3 solutions</span> that exceed your expectations!
                     </p>
                     {/* Decorative Line */}
                     <div className="mt-6 mx-auto w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700"></div>
@@ -388,8 +350,8 @@ const Skills = ({ setCurrentPage }) => {
                       
                       {/* Button Content */}
                       <span className="relative flex items-center justify-center space-x-3">
-                        <Globe className="w-7 h-7 group-hover/btn:rotate-180 group-hover/btn:scale-125 transition-all duration-700" />
-                        <span>Let's Connect</span>
+                        <Code className="w-7 h-7 group-hover/btn:rotate-180 group-hover/btn:scale-125 transition-all duration-700" />
+                        <span>Let's Build Together</span>
                         <Sparkles className="w-6 h-6 group-hover/btn:rotate-12 group-hover/btn:scale-110 transition-all duration-500" />
                       </span>
 
